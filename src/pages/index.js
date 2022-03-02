@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import BtnOriginal from "../components/btn-original"
+import { useLocation } from "@reach/router"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
 import "../styles/top.css"
@@ -18,10 +19,11 @@ export default function Home({data}) {
   const heroText = 'あなたのWeb\n任せてください'
   const siteTitle = data.site.siteMetadata.title
   const siteDescription = data.site.siteMetadata.description
+  const url = useLocation()
   return (
     <>
       <Layout>
-        <Seo title={siteTitle} description={siteDescription} siteType="website" />
+        <Seo title={siteTitle} description={siteDescription} siteType="website" pageUrl={url.pathname} imgUrl={topHeroImg} />
         <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaポートフォリオサイト" heroImgWidth="2400" heroImgHeight="1600" />
         <div className="pt-5 px-4 px-sm-5">
           <div className="mt-5 pb-5">

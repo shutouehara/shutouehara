@@ -10,7 +10,7 @@ const siteTitle = 'shutouehara'
 const Header = () => {
   const location = useLocation
   return (
-    <header className="px-3 position-fixed text-white justify-content-between align-items-baseline w-100 shadow">
+    <header className="px-3 px-md-5 position-fixed text-white justify-content-between align-items-baseline w-100 shadow">
       <Navbar expand="md" variant="dark">
           <Navbar.Brand href="/">{ location === '/' ? <h1 className="ls-half d-ib">{siteTitle}</h1> : <p className='fs-2 fw-bold mb-0 ls-half'>{siteTitle}</p> }</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarResponsive" />

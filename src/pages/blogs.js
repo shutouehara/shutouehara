@@ -1,4 +1,5 @@
 import React from "react"
+import { useLocation } from "@reach/router"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
@@ -12,11 +13,12 @@ import yuimaruImg from "../../static/thumb_yuimaru.webp"
 
 export default function Home({ data }) {
   const heroText = 'ブログ一覧'
+  const url = useLocation()
   return (
     <>
       <Layout>
         <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaブログ一覧ページ" heroImgWidth="2400" heroImgHeight="1600" />
-        <Seo title="ブログ" description="技術ブログを中心に日々のアウトプットを載せます。" siteType="article" />
+        <Seo title="ブログ" description="技術ブログを中心に日々のアウトプットを載せます。" siteType="article" pageUrl={url.pathname} imgUrl={topHeroImg} />
         <article className="p-3 p-sm-5">
           <div className="py-3">
             <h2 className="mt-5 mb-4 pb-2 border-bottom border-dark">技術ブログ</h2>

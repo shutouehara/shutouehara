@@ -1,7 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 
-const Seo = ({ title, description, siteType }) => {
+const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
   return (
     <Helmet
       htmlAttributes={{ lang: "ja-jp" }}
@@ -25,12 +26,32 @@ const Seo = ({ title, description, siteType }) => {
             content: siteType,
         },
         {
+            property: `og:url`,
+            content: `https://shutouehara.com${pageUrl}`,
+        },
+        {
             property: `og:site_name`,
-            content: `Dev Blog`,
+            content: `shutouehara ウェブサイト制作・運用・修正のご相談承ります。`,
         },
         {
             property: `og:locale`,
             content: `ja_JP`,
+        },
+        {
+            property: `og:image:secure_url`,
+            content: `https://shutouehara.com${imgUrl}`,
+        },
+        {
+            property: `og:image`,
+            content: `https://shutouehara.com${imgUrl}`,
+        },
+        {
+            property: `twitter:site`,
+            content: `@webhann`,
+        },
+        {
+            property: `twitter:card`,
+            content: `summary_large_image`,
         },
         {
             property: `twitter:title`,
@@ -39,6 +60,10 @@ const Seo = ({ title, description, siteType }) => {
         {
             property: `twitter:description`,
             content: description,
+        },
+        {
+            property: `twitter:image`,
+            content: `https://shutouehara.com${imgUrl}`,
         },
       ]}
     />

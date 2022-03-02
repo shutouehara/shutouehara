@@ -19,6 +19,7 @@ module.exports = {
     title: `shutouehara ウェブサイト制作・運用・修正のご相談承ります。`,
     description: `上原崇利のポートフォリオサイトです。僕ができることや制作例、ブログなどを掲載しています。`,
     author: `shutouehara`,
+    siteUrl: `https://shutouehara.com`,
   },
   plugins: [
     {
@@ -63,6 +64,19 @@ module.exports = {
           },
         ],
      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: [`/privacy/`, `/disclaimer/`, `/contact/*`, `/404/`],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-N28QRDT",
+      },
     },
   ],
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { useLocation } from "@reach/router"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Seo from "../components/seo"
@@ -16,6 +17,7 @@ import carouselIllust4 from "../../static/illust-carousel4.svg"
 export default function Home({ data }) {
   const heroText = '制作例'
   const [index, setIndex] = useState(0);
+  const url = useLocation()
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -53,7 +55,7 @@ export default function Home({ data }) {
   return (
     <Layout>
       <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaポートフォリオ" heroImgWidth="2400" heroImgHeight="1600" />
-      <Seo title="制作例＆ポートフォリオ" description="制作したサイトやページなど、解説もあわせて掲載します。" siteType="article" />
+      <Seo title="制作例＆ポートフォリオ" description="制作したサイトやページなど、解説もあわせて掲載します。" siteType="article" pageUrl={url.pathname} imgUrl={topHeroImg} />
       <div className="p-3 p-sm-5">
         <h2 className="mt-5 mb-4 pb-2 border-bottom border-dark text-center h5">このようなお困り、ありませんか？</h2>
         <Carousel activeIndex={index} onSelect={handleSelect} className="my-5">

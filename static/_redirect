@@ -1,0 +1,3 @@
+# Netlify's Default domain / Custom domain / Status code
+https://shutouehara.netlify.app/*  https://shutouehara.com/:splat 301!
+https://www.shutouehara.netlify.app/*  https://shutouehara.com/:splat 301!

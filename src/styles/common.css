@@ -5,6 +5,7 @@ body {
   margin: initial;
   background: #dedfe3;
   overflow-x: hidden;
+  font-feature-settings: "liga" 0;
 }
 article ul {
   padding-left: 1rem;
@@ -17,6 +18,10 @@ li.accordion {
 }
 .accordion-button:focus {
   box-shadow: initial;
+}
+.accordion-body {
+  padding: 2rem 1.25rem;
+  white-space: pre-wrap;
 }
 .breadcrumb__list {
   padding: initial;
@@ -141,6 +146,13 @@ address {
 }
 .position-sticky {
   top: 74px;
+}
+.thanks-container {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width:480px) {

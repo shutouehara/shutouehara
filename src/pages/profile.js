@@ -1,4 +1,5 @@
 import React from "react"
+import { useLocation } from "@reach/router"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
@@ -14,9 +15,10 @@ export default function Home() {
       return new Date().getFullYear()-1994
     }
   }
+  const url = useLocation()
   return (
     <Layout>
-      <Seo title="プロフィール" description="経歴など。" siteType="article" />
+      <Seo title="プロフィール" description="経歴など。" siteType="article" pageUrl={url.pathname} imgUrl={profileImg} />
       <h1 className="text-center mt-5 mb-lg-5 pt-lg-4">プロフィール</h1>
       <article className="row row-cols-1 row-cols-sm-2 mt-3 mt-lg-4 pb-5 mx-0">
         <div className="profile-left col px-0 text-center">

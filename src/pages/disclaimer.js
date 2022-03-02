@@ -1,13 +1,15 @@
 import React from "react"
+import { useLocation } from "@reach/router"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const pageTitle = "免責事項"
 
 export default function Home() {
+  const url = useLocation()
   return (
     <Layout>
-      <Seo title={pageTitle} description="当サイトにおける免責事項について記載しています。" siteType="article" />
+      <Seo title={pageTitle} description="当サイトにおける免責事項について記載しています。" siteType="article" pageUrl={url.pathname} />
       <div className="article-container pt-5 bg-white px-3 px-sm-4 mx-3 mx-md-auto">
         <article className="pb-5">
           <div className="mt-5 pb-5 lh-lg article-inner">
