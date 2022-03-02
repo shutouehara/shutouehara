@@ -1,6 +1,5 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
 
 const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
   return (
@@ -9,6 +8,10 @@ const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
       title={title}
       titleTemplate={`%s`}
       meta={[
+        {
+          name: `google-site-verification`,
+          content: `google-site-verification=zKRE8bViBxV-3G6IqFX_n1Ad5iyv3eFWDqIUeD38S3M`,
+        },
         {
             name: `description`,
             content: description,
