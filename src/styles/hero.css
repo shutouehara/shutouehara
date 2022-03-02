@@ -1,0 +1,32 @@
+.hero-text {
+  backdrop-filter: blur(2px);
+}
+.text-bg {
+  bottom: 40px;
+  left: 8px;
+  width: 80%;
+  font-size: 2rem;
+  text-shadow: 0 0 8px #ffffff;
+  white-space: pre-wrap;
+}
+.hero-img {
+  max-height: 94vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width:480px){
+  .text-bg {
+    border-top: 1px solid #878787;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .text-bg {
+    bottom: 16%;
+    left: 0;
+    width: 100%;
+    font-size: 4rem;
+    background: #ffffffb0;
+    box-shadow: 0 2px 4px #7e7e7e;
+}
+}

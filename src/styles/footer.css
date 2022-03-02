@@ -1,0 +1,9 @@
+footer {
+  background: #030a2e;
+  color: #fff;
+}
+.footer-contents {
+  min-width: 280px;
+}
+@media screen and (max-width:767px) {}
+@media screen and (min-width:768px) {}

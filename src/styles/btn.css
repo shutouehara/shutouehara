@@ -1,0 +1,44 @@
+.btn-o {
+  padding-right: 80px;
+  background: #dedfe3;
+  color: #03092e;
+  border: 2px solid #03092e;
+  border-radius: 2px;
+  transition: .3s ease;
+}
+.btn-o::before, .btn-o::after {
+  content: '';
+  position: absolute;
+  right: 1em;
+  height: 2px;
+  background-color: #03092e;
+  transition: 0.3s;
+}
+.btn-o::before {
+  top: calc(50% - 2px);
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 12px;
+}
+.btn-o::after {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+}
+.btn-o:hover {
+  background-color: #03092e;
+  color: #dedfe3;
+  /*box-shadow: 0 0 0 #898989;*/
+}
+.btn-o:hover::before, .btn-o:hover::after {
+  background-color: #dedfe3;
+}
+
+@media screen and (min-width:481px) {
+  .btn-o {
+    padding-right: 120px;
+    font-size: 1.2rem;
+  }
+  .btn-o::before, .btn-o::after {
+    right: 2em;
+  }
+}
