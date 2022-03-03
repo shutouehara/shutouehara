@@ -16,7 +16,7 @@ import profileImg from "../../static/profile_heroimg_2400.webp"
 import blogImg from "../../static/blog_heroimg_2400.webp"
 
 export default function Home({data}) {
-  const heroText = 'あなたのWeb\n任せてください'
+  const heroText = 'あなたのウェブ\n任せてください'
   const siteTitle = data.site.siteMetadata.title
   const siteDescription = data.site.siteMetadata.description
   const url = useLocation()
@@ -29,7 +29,7 @@ export default function Home({data}) {
           <div className="mt-5 pb-5">
             <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
               <div className="menu-img position-relative">
-                <img src={serviceImg} alt="shutoueharaサービス一覧はこちらからご覧ください" width="2400" height="1600" />
+                <img src={serviceImg} alt="shutoueharaサービス一覧はこちらからご覧ください" width="2400" height="1600" loading="lazy" />
               </div>
               <div className="menu-text">
                 <div className="menu-title mb-sm-3"><h2>サービス一覧</h2></div>
@@ -41,7 +41,7 @@ export default function Home({data}) {
           <div className="mt-5 pb-5">
             <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
               <div className="menu-img position-relative">
-                <img src={portfolioImg} alt="shutouehara制作実績＆ポートフォリオはこちらからご覧ください" width="2400" height="1600" />
+                <img src={portfolioImg} alt="shutouehara制作実績＆ポートフォリオはこちらからご覧ください" width="2400" height="1600" loading="lazy" />
               </div>
               <div className="menu-text">
                 <div className="menu-title mb-sm-3"><h2>制作例＆ポートフォリオ</h2></div>
@@ -53,7 +53,7 @@ export default function Home({data}) {
           <div className="mt-5 pb-5">
             <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
               <div className="menu-img position-relative">
-                <img src={profileImg} alt="shutoueharaプロフィールはこちらからご覧ください" width="2400" height="1600" />
+                <img src={profileImg} alt="shutoueharaプロフィールはこちらからご覧ください" width="2400" height="1600" loading="lazy" />
               </div>
               <div className="menu-text">
                 <div className="menu-title mb-sm-3"><h2>プロフィール</h2></div>
@@ -65,7 +65,7 @@ export default function Home({data}) {
           <div className="mt-5 pb-5">
             <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
               <div className="menu-img position-relative">
-                <img src={blogImg} alt="shutoueharaブログ一覧はこちらからご覧ください" width="2400" height="1600" />
+                <img src={blogImg} alt="shutoueharaブログ一覧はこちらからご覧ください" width="2400" height="1600" loading="lazy" />
               </div>
               <div className="menu-text">
                 <div className="menu-title mb-sm-3"><h2>ブログ</h2></div>

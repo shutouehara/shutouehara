@@ -9,7 +9,7 @@ export default function Home() {
         <div className="article-container pt-5 bg-white px-2 px-md-5 mx-3 mx-md-auto">
           <article>
             <div className="pt-3 pt-md-5 lh-lg article-inner min-vh-100">
-              <h1>サイトマップ</h1>
+              <h1 className="px-3">サイトマップ</h1>
               <ul className="ps-5 py-4">
                 <li className="mb-4">
                   <Link to="/service/">

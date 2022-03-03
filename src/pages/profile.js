@@ -25,9 +25,9 @@ export default function Home() {
           <div className="position-sticky profile-left-inner">
             <img src={profileImg} alt="shutoueharaプロフィールはこちらからご覧ください" width="2400" height="1600" />
             <div className="mt-4 pt-4">
-              <p className="h2 mb-0">上原 崇利</p>
+              <p className="h2 mb-0">上原 崇利<span>(犬派)</span></p>
               <p className="h4">shuto uehara</p>
-              <p className="mt-4">{age()}歳</p>
+              <p className="mt-4">{age()}歳（戌年）</p>
               <p className="mt-4 mb-0">沖縄県糸満市 出身</p>
               <p className="mt-0">浦添市 在住</p>
             </div>
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="col-4 col-lg-3 text-end mt-5">できること：</div>
           <div className="col-8 col-lg-9 text-start ps-0 mt-5">ウェブサイト制作（WordPress・Gatsby）</div>
           <div className="col-4 col-lg-3 text-end">使える言語：</div>
-          <div className="col-8 col-lg-9 text-start ps-0">HTML/CSS、JavaScript（jQuery・React）、PHP</div>
+          <div className="col-8 col-lg-9 text-start ps-0">HTML/CSS、JavaScript（jQuery・React）、PHP（WordPress）</div>
           <div className="col-4 col-lg-3 text-end">興味分野：</div>
           <div className="col-8 col-lg-9 text-start ps-0">セキュリティ、アプリ開発、SEOライティング</div>
 
