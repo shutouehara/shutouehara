@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="article-container pt-5 bg-white px-5 mx-3 mx-md-auto">
+        <div className="article-container pt-5 bg-white px-2 px-md-5 mx-3 mx-md-auto">
           <article>
             <div className="pt-3 pt-md-5 lh-lg article-inner min-vh-100">
               <h1>サイトマップ</h1>

@@ -10,7 +10,7 @@ const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
       meta={[
         {
           name: `google-site-verification`,
-          content: `google-site-verification=zKRE8bViBxV-3G6IqFX_n1Ad5iyv3eFWDqIUeD38S3M`,
+          content: `zKRE8bViBxV-3G6IqFX_n1Ad5iyv3eFWDqIUeD38S3M`,
         },
         {
             name: `description`,
