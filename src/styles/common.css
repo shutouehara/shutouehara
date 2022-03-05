@@ -133,7 +133,10 @@ address {
   color: #030a2e;
 }
 .article-inner img {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
+}
+.article-inner p {
+  margin-bottom: 0;
 }
 .article-container a {
   color: #0a58ca !important;

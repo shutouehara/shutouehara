@@ -23,6 +23,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: 'shutoueharaのポートフォリオ',
+        short_name: 'PF of shutouehara',
+        start_url:'/?utm_source=homescreen',
+        background_color: '#030a2e',
+        theme_color: '#030a2e',
+        display: 'minimal-ui',
+        icon: 'static/icons/favicon.png',
+      },
+    },
+    {
       resolve: "gatsby-source-microcms",
       options: {
         apiKey: "9d56d66000b341b096e0d8f56437716d15bf",
@@ -68,7 +80,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap.xml`,
         exclude: [`/privacy/`, `/disclaimer/`, `/contact/*`, `/404/`],
       },
     },

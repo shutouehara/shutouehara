@@ -36,7 +36,7 @@ export default function Home({data}) {
                 <div className="menu-desc"><p>サイト制作 運用 ウェブマーケティングなど 僕がお手伝いできることをこちらに掲載します。</p></div>
               </div>
             </div>
-            <BtnOriginal btnText="サービス一覧へ" linkTo="service" btnClass="text-end mt-3 py-2 p-sm-5" />
+            <BtnOriginal btnText="サービス一覧へ" linkTo="service" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
           <div className="mt-5 pb-5">
             <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
@@ -45,10 +45,10 @@ export default function Home({data}) {
               </div>
               <div className="menu-text">
                 <div className="menu-title mb-sm-3"><h2>制作例＆ポートフォリオ</h2></div>
-                <div className="menu-desc"><p>制作したサイトやページなど、解説もあわせて掲載します。</p></div>
+                <div className="menu-desc"><p>制作したサイトやページなど、解説もあわせて掲載しています。</p></div>
               </div>
             </div>
-            <BtnOriginal btnText="ポートフォリオページへ" linkTo="portfolio" btnClass="text-end mt-3 py-2 p-sm-5" />
+            <BtnOriginal btnText="ポートフォリオページへ" linkTo="portfolio" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
           <div className="mt-5 pb-5">
             <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
@@ -60,7 +60,7 @@ export default function Home({data}) {
                 <div className="menu-desc"><p>経歴など</p></div>
               </div>
             </div>
-            <BtnOriginal btnText="プロフィールページへ" linkTo="profile" btnClass="text-end mt-3 py-2 p-sm-5" />
+            <BtnOriginal btnText="プロフィールページへ" linkTo="profile" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
           <div className="mt-5 pb-5">
             <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
@@ -69,10 +69,10 @@ export default function Home({data}) {
               </div>
               <div className="menu-text">
                 <div className="menu-title mb-sm-3"><h2>ブログ</h2></div>
-                <div className="menu-desc"><p>技術ブログを中心に日々のアウトプットを載せます。</p></div>
+                <div className="menu-desc"><p>技術ブログを中心に日々のアウトプットを載せています。</p></div>
               </div>
             </div>
-            <BtnOriginal btnText="ブログ一覧へ" linkTo="blogs" btnClass="text-end mt-3 py-2 p-sm-5" />
+            <BtnOriginal btnText="ブログ一覧へ" linkTo="blogs" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
         </div>
         <ContactBtn />
