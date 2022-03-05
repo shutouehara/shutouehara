@@ -31,7 +31,8 @@ module.exports = {
         background_color: '#030a2e',
         theme_color: '#030a2e',
         display: 'minimal-ui',
-        icon: 'static/icons/favicon.png',
+        icon: 'static/favicon.ico',
+        apple_touch_icon: 'static/icons/favicon.png',
       },
     },
     {
@@ -43,8 +44,8 @@ module.exports = {
     {
       resolve: "gatsby-source-microcms",
       options: {
-        //apiKey: process.env.API_KEY,
-        apiKey: "9d56d66000b341b096e0d8f56437716d15bf",
+        apiKey: process.env.API_KEY,
+        //apiKey: "9d56d66000b341b096e0d8f56437716d15bf",
         serviceId: 'shutouehara',
         apis: [
           {
