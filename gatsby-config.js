@@ -35,6 +35,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/privacy/`, `/disclaimer/`, `/contact/*`, `/404/`],
+      },
+    },
+    {
       resolve: "gatsby-source-microcms",
       options: {
         apiKey: "9d56d66000b341b096e0d8f56437716d15bf",
@@ -42,9 +48,6 @@ module.exports = {
         apis: [
           {
             endpoint: "portfolio",
-            //query: {
-              //filters: equals('portfolio_category', 'website'),
-            //},
           },
           {
             endpoint: "blog",
@@ -76,12 +79,6 @@ module.exports = {
           },
         ],
      },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        exclude: [`/privacy/`, `/disclaimer/`, `/contact/*`, `/404/`],
-      },
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
