@@ -8,6 +8,7 @@ import Seo from "../../components/seo"
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb'
 import BtnOriginal from "../../components/btn-original"
 import ContactBtn from "../../components/contact-btn"
+import { useLocation } from "@reach/router"
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -17,10 +18,11 @@ const PortfolioPage = ({ pageContext, data }) => {
     breadcrumb: { crumbs },
   } = pageContext
   const date = dayjs.utc(data.microcmsPortfolio.updatedAt).tz('Asia/Tokyo').format('YYYY/MM/DD')
+  const url = useLocation()
   return (
     <Layout>
       <div className="article-container pt-5 bg-white px-3 px-sm-4 mx-3 mx-md-auto">
-        <Seo title={data.microcmsPortfolio.portfolio_title} description={data.microcmsPortfolio.portfolio_desc} siteType="article" />
+        <Seo title={data.microcmsPortfolio.portfolio_title} description={data.microcmsPortfolio.portfolio_desc} siteType="article" pageUrl={url.pathname} imgUrl={data.microcmsPortfolio.portfolio_thumbnail.url} />
         <Breadcrumb
         //crumbsはpageContextからとったものを渡すだけ
         crumbs={crumbs} crumbSeparator=" > "

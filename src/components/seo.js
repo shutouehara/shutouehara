@@ -1,7 +1,23 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { useLocation } from "@reach/router"
 
 const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
+    const url = useLocation().pathname
+
+    console.log(url === '/portfolio/' || url === '/blogs/')
+    function img () {
+        if( url.includes('portfolio')||url.includes('blogs') ) {
+            if(url !== '/portfolio/' && url !== '/blogs/'){
+                return imgUrl
+            }else{
+                return `https://shutouehara.com${imgUrl}`
+            }
+        } else {
+            return `https://shutouehara.com${imgUrl}`
+        }
+    }
+    const ogpImg = img()
   return (
     <Helmet
       htmlAttributes={{ lang: "ja-jp" }}
@@ -42,11 +58,11 @@ const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
         },
         {
             property: `og:image:secure_url`,
-            content: `https://shutouehara.com${imgUrl}`,
+            content: ogpImg,
         },
         {
             property: `og:image`,
-            content: `https://shutouehara.com${imgUrl}`,
+            content: ogpImg,
         },
         {
             property: `twitter:site`,
@@ -66,10 +82,12 @@ const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
         },
         {
             property: `twitter:image`,
-            content: `https://shutouehara.com${imgUrl}`,
+            content: ogpImg,
         },
       ]}
-    />
+    >
+        <link rel="canonical" href={`https://shutouehara.com${pageUrl}`} />
+    </Helmet>
   )
 }
 
