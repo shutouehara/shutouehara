@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <Seo title="お問い合わせ" />
+        <Seo title="お問合せ" description="shutoueharaへのお問い合わせはこちらから。" />
         <div className="article-container py-5 bg-white px-3 px-sm-4 mx-3 mx-md-auto">
           <div
             className="row m-auto py-5"

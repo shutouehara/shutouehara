@@ -1,11 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
+import { useLocation } from "@reach/router"
 
 export default function Home() {
+  const url = useLocation()
   return (
     <>
       <Layout>
+        <Seo title="サイトマップ" description="shutoueharaのサイトマップページです。" siteType="article" pageUrl={url.pathname} />
         <div className="article-container pt-5 bg-white px-2 px-md-5 mx-3 mx-md-auto">
           <article>
             <div className="pt-3 pt-md-5 lh-lg article-inner min-vh-100">
@@ -13,37 +17,37 @@ export default function Home() {
               <ul className="ps-5 py-4">
                 <li className="mb-4">
                   <Link to="/service/">
-                    <p className="h2 d-inline-block">サービス</p>
+                    <button className="sitemap-btn h2 d-block w-100 text-start border-0">サービス</button>
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/portfolio/">
-                    <p className="h2 d-inline-block">制作例</p>
+                    <button className="sitemap-btn h2 d-block w-100 text-start border-0">制作例</button>
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/profile/">
-                    <p className="h2 d-inline-block">プロフィール</p>
+                    <button className="sitemap-btn h2 d-block w-100 text-start border-0">プロフィール</button>
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/blogs/">
-                    <p className="h2 d-inline-block">ブログ</p>
+                    <button className="sitemap-btn h2 d-block w-100 text-start border-0">ブログ</button>
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="/privacy/">
-                    <p className="h2 d-inline-block">プライバシーポリシー</p>
+                    <button className="sitemap-btn h2 d-block w-100 text-start border-0">プライバシーポリシー</button>
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="disclaimer">
-                    <p className="h2 d-inline-block">免責事項</p>
+                    <button className="sitemap-btn h2 d-block w-100 text-start border-0">免責事項</button>
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="contact">
-                    <p className="h2 d-inline-block">お問い合わせ</p>
+                    <button className="sitemap-btn h2 d-block w-100 text-start border-0">お問い合わせ</button>
                   </Link>
                 </li>
               </ul>

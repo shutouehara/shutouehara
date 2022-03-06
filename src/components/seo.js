@@ -4,8 +4,6 @@ import { useLocation } from "@reach/router"
 
 const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
     const url = useLocation().pathname
-
-    console.log(url === '/portfolio/' || url === '/blogs/')
     function img () {
         if( url.includes('portfolio')||url.includes('blogs') ) {
             if(url !== '/portfolio/' && url !== '/blogs/'){
