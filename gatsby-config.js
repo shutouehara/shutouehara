@@ -22,6 +22,7 @@ module.exports = {
     siteUrl: `https://shutouehara.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -32,13 +33,6 @@ module.exports = {
         theme_color: '#030a2e',
         display: 'minimal-ui',
         icon: 'static/favicon.ico',
-        apple_touch_icon: 'static/icons/favicon.png',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        exclude: [`/privacy/`, `/disclaimer/`, `/contact/*`, `/404/`],
       },
     },
     {
