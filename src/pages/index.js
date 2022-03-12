@@ -54,7 +54,7 @@ export default function Home({data}) {
                   <StaticImage
                     src="../../static/portfolio_heroimg_1200.webp"
                     width={1200}
-                    alt="shutouehara制作実績＆ポートフォリオはこちらからご覧ください"
+                    alt="上原崇利(しゅうと)の制作実績＆ポートフォリオはこちらからご覧ください"
                     placeholder="blurred"
                     quality={80}
                     loading="lazy"
@@ -75,7 +75,7 @@ export default function Home({data}) {
                   <StaticImage
                     src="../../static/profile_heroimg_1200.webp"
                     width={1200}
-                    alt="shutoueharaプロフィールはこちらからご覧ください"
+                    alt="上原崇利(しゅうと)のプロフィールはこちらからご覧ください"
                     placeholder="blurred"
                     quality={80}
                     loading="lazy"
@@ -83,7 +83,7 @@ export default function Home({data}) {
                 </div>
                 <div className="menu-text">
                   <div className="menu-title mb-sm-3"><h2>プロフィール</h2></div>
-                  <div className="menu-desc"><p>経歴など</p></div>
+                  <div className="menu-desc"><p>上原崇利の経歴など。</p></div>
                 </div>
               </div>
             </Reveal>
@@ -96,7 +96,7 @@ export default function Home({data}) {
                   <StaticImage
                     src="../../static/blog_heroimg_1200.webp"
                     width={1200}
-                    alt="shutoueharaブログ一覧はこちらからご覧ください"
+                    alt="上原崇利(しゅうと)のブログ一覧はこちらからご覧ください"
                     placeholder="blurred"
                     quality={80}
                     loading="lazy"
