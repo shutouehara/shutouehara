@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
 import { useLocation } from "@reach/router"
 
-import topHeroImg from "../../static/sevice_heroimg_2400.webp"
+import topHeroImg from "../../static/service_heroimg_1200.webp"
 import { Accordion } from "react-bootstrap"
 import BtnOriginal from "../components/btn-original"
 
@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <Layout>
       <Seo title="サービス" description="サイト制作 運用など 僕がお手伝いできることをこちらに掲載します。" siteType="article" pageUrl={url.pathname} imgUrl={topHeroImg} />
-      <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaサービス一覧" heroImgWidth="2400" heroImgHeight="1600" />
+      <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaサービス一覧" heroImgWidth="1200" heroImgHeight="800" />
       <article>
         <ul className="p-3 p-sm-5 lh-lg">
           {services.map((service, i) =>

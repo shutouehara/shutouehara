@@ -12,7 +12,7 @@ import "../styles/top.css"
 
 import { graphql } from "gatsby"
 
-import topHeroImg from "../../static/top_heroimg_2400.webp"
+import topHeroImg from "../../static/top_heroimg_1200.webp"
 
 export default function Home({data}) {
   const heroText = 'あなたのウェブ\n任せてください'
@@ -31,7 +31,7 @@ export default function Home({data}) {
               <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
                 <div className="menu-img position-relative">
                   <StaticImage
-                    src="../../static/sevice_heroimg_2400.webp"
+                    src="../../static/service_heroimg_1200.webp"
                     width={1200}
                     alt="shutoueharaサービス一覧はこちらからご覧ください"
                     placeholder="blurred"
@@ -52,7 +52,7 @@ export default function Home({data}) {
               <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
                 <div className="menu-img position-relative">
                   <StaticImage
-                    src="../../static/portfolio_heroimg_2400.webp"
+                    src="../../static/portfolio_heroimg_1200.webp"
                     width={1200}
                     alt="shutouehara制作実績＆ポートフォリオはこちらからご覧ください"
                     placeholder="blurred"
@@ -73,7 +73,7 @@ export default function Home({data}) {
               <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
                 <div className="menu-img position-relative">
                   <StaticImage
-                    src="../../static/profile_heroimg_2400.webp"
+                    src="../../static/profile_heroimg_1200.webp"
                     width={1200}
                     alt="shutoueharaプロフィールはこちらからご覧ください"
                     placeholder="blurred"
@@ -94,7 +94,7 @@ export default function Home({data}) {
               <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
                 <div className="menu-img position-relative">
                   <StaticImage
-                    src="../../static/blog_heroimg_2400.webp"
+                    src="../../static/blog_heroimg_1200.webp"
                     width={1200}
                     alt="shutoueharaブログ一覧はこちらからご覧ください"
                     placeholder="blurred"

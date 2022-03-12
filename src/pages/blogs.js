@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import CardOriginal from "../components/card"
 import ContactBtn from "../components/contact-btn"
 
-import topHeroImg from "../../static/blog_heroimg_2400.webp"
+import topHeroImg from "../../static/blog_heroimg_1200.webp"
 import webhannImg from "../../static/thumb_webhann.webp"
 import yuimaruImg from "../../static/thumb_yuimaru.webp"
 
@@ -17,7 +17,7 @@ export default function Home({ data }) {
   return (
     <>
       <Layout>
-        <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaブログ一覧ページ" heroImgWidth="2400" heroImgHeight="1600" />
+        <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaブログ一覧ページ" heroImgWidth="1200" heroImgHeight="800" />
         <Seo title="ブログ" description="技術ブログを中心に日々のアウトプットを載せます。" siteType="article" pageUrl={url.pathname} imgUrl={topHeroImg} />
         <article className="p-3 p-sm-5">
           <div className="py-3">

@@ -8,7 +8,7 @@ import { Carousel } from "react-bootstrap"
 import CardOriginal from "../components/card"
 import ContactBtn from "../components/contact-btn"
 
-import topHeroImg from "../../static/portfolio_heroimg_2400.webp"
+import topHeroImg from "../../static/portfolio_heroimg_1200.webp"
 import carouselIllust1 from "../../static/illust-carousel1.svg"
 import carouselIllust2 from "../../static/illust-carousel2.svg"
 import carouselIllust3 from "../../static/illust-carousel3.svg"
@@ -54,7 +54,7 @@ export default function Home({ data }) {
   const customizeWpFilter = data.allMicrocmsPortfolio.edges.filter(edge=>edge.node.portfolio_category == 'customize_wp')
   return (
     <Layout>
-      <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaポートフォリオ" heroImgWidth="2400" heroImgHeight="1600" />
+      <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaポートフォリオ" heroImgWidth="1200" heroImgHeight="800" />
       <Seo title="制作例＆ポートフォリオ" description="制作したサイトやページなど、解説もあわせて掲載します。" siteType="article" pageUrl={url.pathname} imgUrl={topHeroImg} />
       <div className="p-3 p-sm-5">
         <h2 className="mt-5 mb-4 pb-2 border-bottom border-dark text-center h5">このようなお困り、ありませんか？</h2>

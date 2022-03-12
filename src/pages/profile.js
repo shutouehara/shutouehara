@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
 
-import profileImg from "../../static/profile_heroimg_2400.webp"
+import profileImg from "../../static/profile_heroimg_1200.webp"
 
 export default function Home() {
   const age = () => {
@@ -23,7 +23,7 @@ export default function Home() {
       <article className="row row-cols-1 row-cols-sm-2 mt-3 mt-lg-4 pb-5 mx-0">
         <div className="profile-left col px-0 text-center">
           <div className="position-sticky profile-left-inner">
-            <img src={profileImg} alt="shutoueharaプロフィールはこちらからご覧ください" width="2400" height="1600" />
+            <img src={profileImg} alt="shutoueharaプロフィールはこちらからご覧ください" width="1200" height="800" />
             <div className="mt-4 pt-4">
               <p className="h2 mb-0">上原 崇利<span>(犬派)</span></p>
               <p className="h4">shuto uehara</p>
