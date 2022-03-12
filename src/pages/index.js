@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import BtnOriginal from "../components/btn-original"
 import { useLocation } from "@reach/router"
+import { ReactGenieAnimations, Animation } from "react-genie-styled-components"
+import { Reveal } from "react-genie"
+import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
 import "../styles/top.css"
@@ -10,10 +13,6 @@ import "../styles/top.css"
 import { graphql } from "gatsby"
 
 import topHeroImg from "../../static/top_heroimg_2400.webp"
-import serviceImg from "../../static/sevice_heroimg_2400.webp"
-import portfolioImg from "../../static/portfolio_heroimg_2400.webp"
-import profileImg from "../../static/profile_heroimg_2400.webp"
-import blogImg from "../../static/blog_heroimg_2400.webp"
 
 export default function Home({data}) {
   const heroText = 'あなたのウェブ\n任せてください'
@@ -24,58 +23,97 @@ export default function Home({data}) {
     <>
       <Layout>
         <Seo title={siteTitle} description={siteDescription} siteType="website" pageUrl={url.pathname} imgUrl={topHeroImg} />
+        <ReactGenieAnimations />
         <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaポートフォリオサイト" heroImgWidth="2400" heroImgHeight="1600" />
         <div className="pt-5 px-4 px-sm-5">
           <div className="mt-5 pb-5">
-            <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
-              <div className="menu-img position-relative">
-                <img src={serviceImg} alt="shutoueharaサービス一覧はこちらからご覧ください" width="2400" height="1600" loading="lazy" />
+            <Reveal animation={Animation.FadeInUp} delay="400" >
+              <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
+                <div className="menu-img position-relative">
+                  <StaticImage
+                    src="../../static/sevice_heroimg_2400.webp"
+                    width={1200}
+                    alt="shutoueharaサービス一覧はこちらからご覧ください"
+                    placeholder="blurred"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="menu-text">
+                  <div className="menu-title mb-sm-3"><h2>サービス一覧</h2></div>
+                  <div className="menu-desc"><p>サイト制作 運用 ウェブマーケティングなど 僕がお手伝いできることをこちらに掲載します。</p></div>
+                </div>
               </div>
-              <div className="menu-text">
-                <div className="menu-title mb-sm-3"><h2>サービス一覧</h2></div>
-                <div className="menu-desc"><p>サイト制作 運用 ウェブマーケティングなど 僕がお手伝いできることをこちらに掲載します。</p></div>
-              </div>
-            </div>
+            </Reveal>
             <BtnOriginal btnText="サービス一覧へ" linkTo="service" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
           <div className="mt-5 pb-5">
-            <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
-              <div className="menu-img position-relative">
-                <img src={portfolioImg} alt="shutouehara制作実績＆ポートフォリオはこちらからご覧ください" width="2400" height="1600" loading="lazy" />
+            <Reveal animation={Animation.FadeInUp} delay="400" >
+              <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
+                <div className="menu-img position-relative">
+                  <StaticImage
+                    src="../../static/portfolio_heroimg_2400.webp"
+                    width={1200}
+                    alt="shutouehara制作実績＆ポートフォリオはこちらからご覧ください"
+                    placeholder="blurred"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="menu-text">
+                  <div className="menu-title mb-sm-3"><h2>制作例＆ポートフォリオ</h2></div>
+                  <div className="menu-desc"><p>制作したサイトやページなど、解説もあわせて掲載しています。</p></div>
+                </div>
               </div>
-              <div className="menu-text">
-                <div className="menu-title mb-sm-3"><h2>制作例＆ポートフォリオ</h2></div>
-                <div className="menu-desc"><p>制作したサイトやページなど、解説もあわせて掲載しています。</p></div>
-              </div>
-            </div>
+            </Reveal>
             <BtnOriginal btnText="ポートフォリオページへ" linkTo="portfolio" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
           <div className="mt-5 pb-5">
-            <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
-              <div className="menu-img position-relative">
-                <img src={profileImg} alt="shutoueharaプロフィールはこちらからご覧ください" width="2400" height="1600" loading="lazy" />
+            <Reveal animation={Animation.FadeInUp} delay="400" >
+              <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
+                <div className="menu-img position-relative">
+                  <StaticImage
+                    src="../../static/profile_heroimg_2400.webp"
+                    width={1200}
+                    alt="shutoueharaプロフィールはこちらからご覧ください"
+                    placeholder="blurred"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="menu-text">
+                  <div className="menu-title mb-sm-3"><h2>プロフィール</h2></div>
+                  <div className="menu-desc"><p>経歴など</p></div>
+                </div>
               </div>
-              <div className="menu-text">
-                <div className="menu-title mb-sm-3"><h2>プロフィール</h2></div>
-                <div className="menu-desc"><p>経歴など</p></div>
-              </div>
-            </div>
+            </Reveal>
             <BtnOriginal btnText="プロフィールページへ" linkTo="profile" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
           <div className="mt-5 pb-5">
-            <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
-              <div className="menu-img position-relative">
-                <img src={blogImg} alt="shutoueharaブログ一覧はこちらからご覧ください" width="2400" height="1600" loading="lazy" />
+            <Reveal animation={Animation.FadeInUp} delay="400" >
+              <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5 flex-sm-row-reverse">
+                <div className="menu-img position-relative">
+                  <StaticImage
+                    src="../../static/blog_heroimg_2400.webp"
+                    width={1200}
+                    alt="shutoueharaブログ一覧はこちらからご覧ください"
+                    placeholder="blurred"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="menu-text">
+                  <div className="menu-title mb-sm-3"><h2>ブログ</h2></div>
+                  <div className="menu-desc"><p>技術ブログを中心に日々のアウトプットを載せています。</p></div>
+                </div>
               </div>
-              <div className="menu-text">
-                <div className="menu-title mb-sm-3"><h2>ブログ</h2></div>
-                <div className="menu-desc"><p>技術ブログを中心に日々のアウトプットを載せています。</p></div>
-              </div>
-            </div>
+            </Reveal>
             <BtnOriginal btnText="ブログ一覧へ" linkTo="blogs" btnClass="text-center mt-3 py-2 p-sm-5" />
           </div>
         </div>
-        <ContactBtn />
+        <Reveal animation={Animation.SlideInLeft} delay="400" >
+          <ContactBtn />
+        </Reveal>
       </Layout>
     </>
   )

@@ -83,5 +83,8 @@ module.exports = {
         id: "GTM-N28QRDT",
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 }
