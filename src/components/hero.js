@@ -20,7 +20,7 @@ const Hero = ({ heroText, heroImgSrc, heroImgAlt, heroImgWidth, heroImgHeight })
       <div className="hero-text position-absolute w-100 h-100">
         <HeroTextArea />
       </div>
-      <div className="hero-img"><img src={heroImgSrc} alt={heroImgAlt} width={heroImgWidth} height={heroImgHeight} loading="eager" /></div>
+      <div className="hero-img"><img src={heroImgSrc} alt={heroImgAlt} width={heroImgWidth} height={heroImgHeight} loading="eager" style={{ width:'100%', height:'auto' }} /></div>
     </div>
   )
 }

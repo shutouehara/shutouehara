@@ -31,7 +31,7 @@ export default function Home() {
                     <Link to="/portfolio/">
                       <button className="sitemap-btn h2 d-block w-100 text-start border-0">制作例</button>
                     </Link>
-                    <p class="ps-2">提供できるサービス一覧</p>
+                    <p class="ps-2">これまでの実績や、試しに制作したもの</p>
                   </li>
                 </Reveal>
                 <Reveal animation={Animation.FadeInUp} delay="200" >
@@ -39,7 +39,7 @@ export default function Home() {
                     <Link to="/profile/">
                       <button className="sitemap-btn h2 d-block w-100 text-start border-0">プロフィール</button>
                     </Link>
-                    <p class="ps-2">提供できるサービス一覧</p>
+                    <p class="ps-2">僕のこれまでの経歴など</p>
                   </li>
                 </Reveal>
                 <Reveal animation={Animation.FadeInUp} delay="300" >
@@ -47,7 +47,7 @@ export default function Home() {
                     <Link to="/blogs/">
                       <button className="sitemap-btn h2 d-block w-100 text-start border-0">ブログ</button>
                     </Link>
-                    <p>提供できるサービス一覧</p>
+                    <p class="ps-2">日々学んだことや気づいたことなど、記載しています</p>
                   </li>
                 </Reveal>
                 <Reveal animation={Animation.FadeInUp} delay="400" >
@@ -55,7 +55,7 @@ export default function Home() {
                     <Link to="/privacy/">
                       <button className="sitemap-btn h2 d-block w-100 text-start border-0">プライバシーポリシー</button>
                     </Link>
-                    <p class="ps-2">提供できるサービス一覧</p>
+                    <p class="ps-2">ご入力いただいた個人情報の取扱いについて</p>
                   </li>
                 </Reveal>
                 <Reveal animation={Animation.FadeInUp} delay="500" >
@@ -63,7 +63,7 @@ export default function Home() {
                     <Link to="/disclaimer/">
                       <button className="sitemap-btn h2 d-block w-100 text-start border-0">免責事項</button>
                     </Link>
-                    <p class="ps-2">提供できるサービス一覧</p>
+                    <p class="ps-2">このサイトに掲載している情報についておことわり</p>
                   </li>
                 </Reveal>
                 <Reveal animation={Animation.FadeInUp} delay="600" >
@@ -71,7 +71,7 @@ export default function Home() {
                     <Link to="/contact/">
                       <button className="sitemap-btn h2 d-block w-100 text-start border-0">お問い合わせ</button>
                     </Link>
-                    <p class="ps-2">提供できるサービス一覧</p>
+                    <p class="ps-2">ウェブサイトに関するご相談はお気軽にどうぞ！</p>
                   </li>
                 </Reveal>
               </ul>
