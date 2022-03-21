@@ -78,9 +78,12 @@ const Seo = ({ title, description, siteType, pageUrl, imgUrl }) => {
             property: `twitter:description`,
             content: description,
         },
+        {
+            property: `twitter:image`,
+            content: ogpImg,
+        },
       ]}
     >
-        <meta name="twitter:image" content={ogpImg} />
         <link rel="canonical" href={`https://shutouehara.com${pageUrl}`} />
     </Helmet>
   )
