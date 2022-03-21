@@ -38,6 +38,8 @@ h1 {
 a {
   color: inherit;
 }
+a:not(.article-inner a) {
+  text-decoration: none;
 img {
   height: auto;
 }
