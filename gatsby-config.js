@@ -83,6 +83,13 @@ module.exports = {
         id: "GTM-N28QRDT",
       },
     },
+    {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: `ca-pub-6716641662780805`,
+        head: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
