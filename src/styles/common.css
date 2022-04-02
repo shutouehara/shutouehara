@@ -19,6 +19,12 @@ li.accordion {
 .accordion-button:focus {
   box-shadow: initial;
 }
+.accordion-button:hover {
+  background-color: #e7f1ff;
+}
+.accordion-button:not:active {
+  background-color: initial;
+}
 .accordion-body {
   padding: 2rem 1.25rem;
   white-space: pre-wrap;
@@ -77,6 +83,21 @@ address {
 }
 .card, .card-img, .card-img-top {
   border-radius: initial;
+}
+.blogs .card-body .blog-category {
+  border: 2px solid #dee2e6;
+  border-radius: 0.4rem;
+}
+.card-shadow {
+  box-shadow: 2px 2px 8px #898989, -2px -2px 8px #898989;
+  transition: ease .4s;
+}
+.card-shadow a {
+  color: inherit;
+}
+.card-shadow:hover, .card-shadow:focus {
+  box-shadow: none;
+  transition: ease .4s;
 }
 .carousel-img {
   width: 40%;
@@ -188,6 +209,9 @@ pre code {
   display: block;
   border-radius: 8px;
 }
+.sitemap a {
+  text-decoration: initial;
+}
 
 
 @media screen and (max-width:480px) {
@@ -204,6 +228,9 @@ pre code {
 }
 
 @media screen and (max-width:896px) {
+  .sitemap li::marker {
+    content: '▶︎';
+  }
 }
 
 @media screen and (min-width:481px) {

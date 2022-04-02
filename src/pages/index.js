@@ -25,7 +25,7 @@ export default function Home({data}) {
         <Seo title={siteTitle} description={siteDescription} siteType="website" pageUrl={url.pathname} imgUrl={topHeroImg} />
         <ReactGenieAnimations />
         <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaポートフォリオサイト" heroImgWidth="2400" heroImgHeight="1600" />
-        <div className="pt-5 px-4 px-sm-5">
+        <div className="pt-5 px-4 px-sm-5 m-auto" style={{maxWidth:'1400px'}}>
           <div className="mt-5 pb-5">
             <Reveal animation={Animation.FadeInUp} delay="400" >
               <div className="d-flex flex-wrap align-items-sm-center gap-3 gap-sm-5 p-sm-5">
@@ -41,7 +41,7 @@ export default function Home({data}) {
                 </div>
                 <div className="menu-text">
                   <div className="menu-title mb-sm-3"><h2>サービス一覧</h2></div>
-                  <div className="menu-desc"><p>サイト制作 運用 ウェブマーケティングなど 僕がお手伝いできることをこちらに掲載します。</p></div>
+                  <div className="menu-desc"><p style={{maxWidth:'560px'}}>サイト制作 運用 ウェブマーケティングなど 僕がお手伝いできることをこちらに掲載します。</p></div>
                 </div>
               </div>
             </Reveal>

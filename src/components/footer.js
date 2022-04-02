@@ -7,7 +7,7 @@ export default function Footer() {
   const location = useLocation
   return (
       <footer className="pt-4 justify-content-between align-items-baseline">
-        <div className="d-flex flex-wrap footer-menu mx-5 mb-4 lh-ll justify-content-evenly">
+        <div className="d-flex flex-wrap footer-menu m-auto mb-4 lh-ll justify-content-evenly" style={{maxWidth:'1200px'}}>
           <p className="footer-contents text-center mb-0"><Link to="/privacy/">プライバシーポリシー</Link></p>
           <p className="footer-contents text-center mb-0 ls-half"><Link to="/disclaimer/">免責事項</Link></p>
           <p className="footer-contents text-center mb-0"><Link to="/sitemap/">サイトマップ</Link></p>

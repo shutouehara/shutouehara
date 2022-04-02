@@ -51,11 +51,11 @@ export default function Home() {
     <Layout>
       <Seo title="サービス" description="サイト制作 運用など 僕がお手伝いできることをこちらに掲載します。" siteType="article" pageUrl={url.pathname} imgUrl={topHeroImg} />
       <Hero heroText={heroText} heroImgSrc={topHeroImg} heroImgAlt="shutoueharaサービス一覧" heroImgWidth="1200" heroImgHeight="800" />
-      <article>
+      <article className="m-auto" style={{maxWidth:'1200px'}}>
         <ul className="p-3 p-sm-5 lh-lg">
           {services.map((service, i) =>
-            <Accordion defaultActiveKey={['0']} alwaysOpen as="li" className="mt-5">
-              <h2>{service.title}</h2>
+            <Accordion defaultActiveKey={['0']} alwaysOpen as="li" className="mt-5 pb-md-5">
+              <h2 className="h4">{service.title}</h2>
               <Accordion.Item eventKey={i}>
                 <Accordion.Header as="p">{service.title2}</Accordion.Header>
                 <Accordion.Body>

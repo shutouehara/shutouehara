@@ -17,7 +17,7 @@ export default function Home() {
           <article>
             <div className="pt-3 pt-md-5 lh-lg article-inner min-vh-100">
               <h1 className="px-3">サイトマップ</h1>
-              <ul className="ps-5 py-4 mb-0">
+              <ul className="ps-5 py-4 mb-0 sitemap">
                 <Reveal animation={Animation.FadeInUp} >
                   <li className="mb-4 pb-4">
                     <Link to="/service/">
