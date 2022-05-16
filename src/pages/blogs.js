@@ -50,22 +50,22 @@ export default function Home({ data }) {
             <li className="py-3 list-unstyled">
               <h2 className="fw-bold mt-5 mb-4 pb-2 border-bottom border-dark">うぇぶはん.com</h2>
               <p className="mb-5">主にデザインのインプット＆アウトプットにまとめているブログです。テレビ局のウェブ班として、テレビ番組HPなどのデザインが多いです。<br />WordPressに慣れ親しむために初めて制作したブログサイトです。</p>
-              <div className="card-shadow p-4 d-inline-block" style={{ border: '8px solid #03092e' }} >
-                <Link to="https://www.webhann.com/" target="_blank" rel="noopener">
+              <Link to="https://www.webhann.com/" target="_blank" rel="noopener">
+                <div className="card-shadow p-4 d-inline-block" style={{ border: '8px solid #03092e' }} >
                   <img src={webhannImg} alt="webhann.com" className="max-400" />
                   <p className="mt-2 mb-0 fs-4">うぇぶはん.com</p>
-                </Link>
-              </div>
+                </div>
+              </Link>
             </li>
             <li className="py-3 list-unstyled">
               <h2 className="fw-bold mt-5 mb-4 pb-2 border-bottom border-dark">おきなわフリー写真　ゆいまーる</h2>
               <p className="mb-5">サイト制作に使えるフリーの沖縄写真が欲しいと思い、自分で撮った写真を集めてサイトを作りました。</p>
-              <div className="card-shadow p-4 d-inline-block" style={{ border: '8px solid #03092e' }} >
-                <Link to="https://okinawa-yuimaru.com/" target="_blank" rel="noopener">
+              <Link to="https://okinawa-yuimaru.com/" target="_blank" rel="noopener">
+                <div className="card-shadow p-4 d-inline-block" style={{ border: '8px solid #03092e' }} >
                   <img src={yuimaruImg} alt="okinawa-yuimaru.com" className="max-400" />
                   <p className="mt-2 mb-0 fs-4">おきなわフリー写真　ゆいまーる</p>
-                </Link>
-              </div>
+                </div>
+              </Link>
             </li>
           </ul>
         </article>

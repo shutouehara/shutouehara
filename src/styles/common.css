@@ -88,6 +88,9 @@ address {
   border: 2px solid #dee2e6;
   border-radius: 0.4rem;
 }
+.fs-small {
+  font-size: 0.8rem;
+}
 .card-shadow {
   box-shadow: 2px 2px 8px #898989, -2px -2px 8px #898989;
   transition: ease .4s;
@@ -230,6 +233,7 @@ pre code {
 @media screen and (max-width:896px) {
   .sitemap li::marker {
     content: '▶︎';
+    display: inline-block;
   }
 }
 
