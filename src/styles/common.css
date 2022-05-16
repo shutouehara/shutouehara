@@ -138,31 +138,37 @@ address {
   margin-top: 24px;
   margin-bottom: 1rem;
   position: relative;
-  padding-left: 8px;
+  padding-left: 16px;
   display: flex;
   align-items: center;
 }
 .article-inner h3:before {
-  content: '⚫︎';
-  position: absolute;
-  left: -12px;
-  font-size: 1rem;
   color: #030a2e;
-
+  content: "";
+  font-size: 1rem;
+  left: 0px;
+  position: absolute;
+  background: #030a2e;
+  width: 8px;
+  height: 100%;
+  border-radius: 2px;
 }
 .article-inner h4 {
   position: relative;
-  padding-left: 8px;
+  padding-left: 24px;
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
 }
 .article-inner h4:before {
-  content: '-';
-  position: absolute;
-  left: -4px;
-  font-size: 1rem;
   color: #030a2e;
+  content: "";
+  font-size: 1rem;
+  left: 0px;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #000;
 }
 .article-inner img {
   margin: 2rem 0 0;
