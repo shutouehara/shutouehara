@@ -180,7 +180,9 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMicrocmsPortfolio {
+    allMicrocmsPortfolio(
+      sort: {fields: updatedAt, order: DESC}
+    ) {
       edges {
         node {
           portfolio_thumbnail {

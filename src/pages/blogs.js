@@ -77,7 +77,9 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMicrocmsBlog {
+    allMicrocmsBlog(
+      sort: {fields: updatedAt, order: DESC}
+    ) {
       edges {
         node {
           blog_thumbnail {
