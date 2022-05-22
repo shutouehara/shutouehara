@@ -56,6 +56,11 @@ export default function Home() {
           まずはウェブサイトを制作できるようになるべきだと考え、フロントの制作技術やSEOなどを業務を通して学んでいます。</div>
         </div>
       </article>
+      <div className="text-center">
+        <a href="https://github.com/shutouehara" target="_blank" rel="noopener noreferrer">
+          <p>GitHub</p>
+        </a>
+      </div>
       <ContactBtn />
     </Layout>
   )
