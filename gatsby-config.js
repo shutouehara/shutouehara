@@ -20,6 +20,37 @@ module.exports = {
     description: `上原崇利のポートフォリオサイトです。僕ができることや制作例、ブログなどを掲載しています。`,
     author: `shutouehara`,
     siteUrl: `https://shutouehara.com`,
+    copyright: `©︎ .${new Date().getFullYear()} shutouehara.com`,
+    menu: [
+      {
+        label: 'Services',
+        path: '/service/',
+      },
+      {
+        label: 'Portfolios',
+        path: '/portfolio/',
+      },
+      {
+        label: 'Profile',
+        path: '/profile/',
+      },
+      {
+        label: 'Blogs',
+        path: '/blogs/',
+      },
+      {
+        label: 'Privacy policy',
+        path: '/privacy/',
+      },
+      {
+        label: 'disclaimer',
+        path: '/disclaimer/',
+      },
+      {
+        label: 'Sitemap',
+        path: '/sitemap/',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-sitemap`,
