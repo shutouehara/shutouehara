@@ -223,6 +223,8 @@ pre code {
   padding: 8px;
   display: block;
   border-radius: 8px;
+  white-space: break-spaces;
+  word-break: break-all;
 }
 .sitemap a {
   text-decoration: initial;
