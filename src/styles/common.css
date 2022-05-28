@@ -98,7 +98,7 @@ address {
   font-size: 0.8rem;
 }
 .card-shadow {
-  box-shadow: 2px 2px 8px #898989, -2px -2px 8px #898989;
+  box-shadow: 0 2px 8px #898989;
   transition: ease .4s;
 }
 .card-shadow a {
