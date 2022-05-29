@@ -25,40 +25,42 @@ export default function Home() {
           <div className="position-sticky profile-left-inner">
             <img src={profileImg} alt="shutoueharaプロフィールはこちらからご覧ください" width="1200" height="800" />
             <div className="mt-4 pt-4">
-              <p className="h2 mb-0">上原 崇利<span>(犬派)</span></p>
-              <p className="h4">shuto uehara</p>
-              <p className="mt-4">{age()}歳（戌年）</p>
+              <p className="h2 mb-0">上原 崇利</p>
+              <p className="h4"><span>shuto uehara</span></p>
+              <p className="mt-4">{age()}歳</p>
               <p className="mt-4 mb-0">沖縄県糸満市 出身</p>
               <p className="mt-0">浦添市 在住</p>
             </div>
           </div>
         </div>
-        <div className="profile-right mt-5 mt-md-0 col row row-cols-2 lh-lg">
-          <div className="col-3 text-end">職種：</div>
-          <div className="col-9 text-start ps-0">フロントエンドエンジニア</div>
-          <div className="col-3 text-end">特技：</div>
-          <div className="col-9 text-start ps-0">校正</div>
-          <div className="col-3 text-end">趣味：</div>
-          <div className="col-9 text-start ps-0">未経験の技術を試してみること</div>
+        <div className="text-center">
+          <dl className="profile-right text-start mx-auto mt-5 mt-md-0 px-4 px-md-5">
+            <dt className="fw-normal">職種</dt>
+            <dd className="mb-4">フロントエンドエンジニア</dd>
+            <dt className="fw-normal">特技</dt>
+            <dd className="mb-4">校正</dd>
+            <dt className="fw-normal">趣味</dt>
+            <dd className="mb-5">未経験の技術を試してみること</dd>
 
-          <div className="col-4 col-lg-3 text-end mt-5">できること：</div>
-          <div className="col-8 col-lg-9 text-start ps-0 mt-5">ウェブサイト制作（WordPress・Gatsby）</div>
-          <div className="col-4 col-lg-3 text-end">使える言語：</div>
-          <div className="col-8 col-lg-9 text-start ps-0">HTML/CSS、JavaScript（jQuery・React）、PHP（WordPress）</div>
-          <div className="col-4 col-lg-3 text-end">興味分野：</div>
-          <div className="col-8 col-lg-9 text-start ps-0">セキュリティ、アプリ開発、SEOライティング</div>
+            <dt className="fw-normal pt-4">できること</dt>
+            <dd className="mb-4">ウェブサイト制作（WordPress・Gatsby）</dd>
+            <dt className="fw-normal">使える言語</dt>
+            <dd className="mb-4">HTML/CSS、JavaScript（jQuery・React）、PHP（WordPress）</dd>
+            <dt className="fw-normal">興味分野</dt>
+            <dd className="mb-5">セキュリティ、アプリ開発、SEOライティング</dd>
 
-          <div className="col-3 text-end mt-5">学歴：</div>
-          <div className="col-9 text-start ps-0 mt-5">琉球大学 産業経営学科 卒業</div>
-          <div className="col-3 text-end lh-lg">職歴：</div>
-          <div className="col-9 text-start ps-0 lh-lg">2019年より大阪の制作会社にて広告広報制作のアシスタントディレクターとして勤めました。販促物やノベルティ制作、取扱説明書などの制作に携わりました。そこでウェブマーケティングを含む案件に関わったことから、ウェブ業界に興味を持ちました。<br />
-          新型コロナの影響もあり地元にUターン転職することに。2020年、県内のメディア企業グループ会社に入社。<br />
-          まずはウェブサイトを制作できるようになるべきだと考え、フロントの制作技術やSEOなどを業務を通して学んでいます。</div>
+            <dt className="fw-normal pt-4">学歴</dt>
+            <dd className="mb-4">琉球大学 産業経営学科 卒業</dd>
+            <dt className="fw-normal">職歴</dt>
+            <dd className="mb-4 lh-lg">2019年より大阪の制作会社にて広告広報制作のアシスタントディレクターとして勤めました。販促物やノベルティ制作、取扱説明書などの制作に携わりました。そこでウェブマーケティングを含む案件に関わったことから、ウェブ業界に興味を持ちました。<br />
+            新型コロナの影響もあり地元にUターン転職することに。2020年、県内のメディア企業グループ会社に入社。<br />
+            まずはウェブサイトを制作できるようになるべきだと考え、フロントの制作技術やSEOなどを業務・独学を通して学んでいます。</dd>
+          </dl>
         </div>
       </article>
       <div className="text-center">
         <a href="https://github.com/shutouehara" target="_blank" rel="noopener noreferrer">
-          <p>GitHub</p>
+          <p className="text-decoration-underline d-inline-block">github.com</p>
         </a>
       </div>
       <ContactBtn />

@@ -182,7 +182,7 @@ address {
   background: #fff;
 }
 .profile-right {
-  row-gap: 16px;
+  max-width: 560px;
 }
 .position-sticky {
   top: 74px;
