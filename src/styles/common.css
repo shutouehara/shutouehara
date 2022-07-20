@@ -3,9 +3,12 @@
 }
 body {
   margin: initial;
-  background: #dedfe3;
+  /* background: #dedfe3; */
   overflow-x: hidden;
   font-feature-settings: "liga" 0;
+}
+header, footer, .btn-o::before, .btn-o::after, .btn-o:hover {
+  background: #01157b;
 }
 h2, h3 {
   font-weight: bold;
@@ -93,6 +96,12 @@ address {
 .blogs .card-body .blog-category {
   border: 2px solid #dee2e6;
   border-radius: 0.4rem;
+}
+.card-text {
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }
 .fs-small {
   font-size: 0.8rem;
@@ -291,7 +300,4 @@ pre code {
 }
 
 @media screen and (min-width:992px) {
-  .profile-right {
-    height: 120vh;
-  }
 }

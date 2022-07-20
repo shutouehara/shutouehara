@@ -45,7 +45,6 @@ export default function Home() {
   ]
 
   const textContent = JSON.stringify(services, null, "\t")
-  console.log(textContent)
 
   return (
     <Layout>
@@ -54,7 +53,7 @@ export default function Home() {
       <article className="m-auto" style={{maxWidth:'1200px'}}>
         <ul className="p-3 p-sm-5 lh-lg">
           {services.map((service, i) =>
-            <Accordion defaultActiveKey={['0']} alwaysOpen as="li" className="mt-5 pb-md-5">
+            <Accordion defaultActiveKey={['0']} alwaysOpen as="li" className="mt-5">
               <h2 className="h4">{service.title}</h2>
               <Accordion.Item eventKey={i}>
                 <Accordion.Header as="p">{service.title2}</Accordion.Header>

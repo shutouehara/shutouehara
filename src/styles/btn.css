@@ -1,8 +1,9 @@
 .btn-o {
   padding-right: 80px;
-  background: #dedfe3;
-  color: #03092e;
-  border: 2px solid #03092e;
+  /* background: #dedfe3; */
+  background: #ffffff;
+  color: #01157b;
+  border: 2px solid #01157b;
   border-radius: 2px;
   transition: .3s ease;
 }
@@ -11,7 +12,7 @@
   position: absolute;
   right: 1em;
   height: 2px;
-  background-color: #03092e;
+  /* background-color: #03092e; */
   transition: 0.3s;
 }
 .btn-o::before {
@@ -25,7 +26,7 @@
   width: 48px;
 }
 .btn-o:hover {
-  background-color: #03092e;
+  /* background-color: #03092e; */
   color: #dedfe3;
   /*box-shadow: 0 0 0 #898989;*/
 }

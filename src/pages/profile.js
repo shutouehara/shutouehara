@@ -4,12 +4,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
 
-import profileImg from "../../static/profile_heroimg_1200.webp"
+import profileImg from "../../static/profile_photo.webp"
 
 export default function Home() {
   const age = () => {
     let month = new Date().getMonth()
-    if (month <= 4) {
+    let date = new Date().getDate()
+    console.log(date);
+    if (month <= 5 && date < 30) {
       return new Date().getFullYear()-1995
     }else{
       return new Date().getFullYear()-1994
@@ -29,7 +31,7 @@ export default function Home() {
               <p className="h4"><span>shuto uehara</span></p>
               <p className="mt-4">{age()}歳</p>
               <p className="mt-4 mb-0">沖縄県糸満市 出身</p>
-              <p className="mt-0">浦添市 在住</p>
+              <p className="mt-0 pb-4">浦添市 在住</p>
             </div>
           </div>
         </div>
@@ -40,21 +42,27 @@ export default function Home() {
             <dt className="fw-normal">特技</dt>
             <dd className="mb-4">校正</dd>
             <dt className="fw-normal">趣味</dt>
-            <dd className="mb-5">未経験の技術を試してみること</dd>
+            <dd className="mb-5">買い物（家事関連）、料理、ラジオ視聴、未経験の技術を試してみること</dd>
 
             <dt className="fw-normal pt-4">できること</dt>
             <dd className="mb-4">ウェブサイト制作（WordPress・Gatsby）</dd>
             <dt className="fw-normal">使える言語</dt>
-            <dd className="mb-4">HTML/CSS、JavaScript（jQuery・React）、PHP（WordPress）</dd>
+            <dd className="mb-4">HTML/CSS、JavaScript（jQuery・React）、PHP</dd>
+            <dt className="fw-normal">現在学習中</dt>
+            <dd className="mb-4">TypeScript、Next.js、Laravel</dd>
             <dt className="fw-normal">興味分野</dt>
-            <dd className="mb-5">セキュリティ、アプリ開発、SEOライティング</dd>
+            <dd className="mb-5">情報セキュリティ、アプリ開発、SEOライティング</dd>
 
             <dt className="fw-normal pt-4">学歴</dt>
-            <dd className="mb-4">琉球大学 産業経営学科 卒業</dd>
-            <dt className="fw-normal">職歴</dt>
-            <dd className="mb-4 lh-lg">2019年より大阪の制作会社にて広告広報制作のアシスタントディレクターとして勤めました。販促物やノベルティ制作、取扱説明書などの制作に携わりました。そこでウェブマーケティングを含む案件に関わったことから、ウェブ業界に興味を持ちました。<br />
-            新型コロナの影響もあり地元にUターン転職することに。2020年、県内のメディア企業グループ会社に入社。<br />
-            まずはウェブサイトを制作できるようになるべきだと考え、フロントの制作技術やSEOなどを業務・独学を通して学んでいます。</dd>
+            <dd className="mb-4">琉球大学 観光産業科学部 産業経営学科　卒業</dd>
+            <dt className="fw-normal">経歴</dt>
+            <dd className="mb-4 lh-lg">
+              <p>高校在学時にエイサーのアルバイトを経験し、観光業界の魅力と苦労を目の当たりに。<br />
+              観光業界の付加価値向上を目指し、大学では観光産業と経営について学びました。また、DMCでインターン生となり、観光地の魅力掘り起こしと発信について知見を深めました。</p>
+              <p>それまでの経験から、将来は沖縄のブランディングに貢献できるようになりたいと考え、卒業後は大阪の制作会社に就職。広告広報制作のアシスタントディレクターとして勤め、販促物やノベルティ制作、取扱説明書などの制作に携わりました。そこでウェブマーケティングを含む案件に関わったことから、ウェブ業界に興味を持ちました。</p>
+              <p className="mb-0">何かを作るスキルを得たいと考え、新型コロナの影響もあり、転職を決意。ご縁を頂いて沖縄県内のメディアグループ会社に入社し、ホームページ更新の仕事をしています。<br />
+              まずはウェブサイトを制作できるようになるべきだと考え、ウェブ制作技術やSEOなどを業務・独学を通して学んできました。</p>
+            </dd>
           </dl>
         </div>
       </article>
