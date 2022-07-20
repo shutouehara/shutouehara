@@ -122,7 +122,7 @@ export default function Home({ data }) {
           <div className="py-3" id="landingpage"></div>
           <li className="mb-3 list-unstyled">
             <h2 className="fw-bold mt-5 mb-4 pb-2 border-bottom border-dark">LP制作</h2>
-            <p className="mb-5">サイト内にテーマに特化した特別な1ページを制作してます。新商品発売時やキャンペーン展開時などに必要なページを制作します。</p>
+            <p className="mb-5">サイト内のテンプレートとは異なる、特別な1ページを制作してます。新商品発売時やキャンペーン展開時などに必要なページを制作します。</p>
             <ul className="ul-list gap">
               {landingpageFilter.map(({node}) =>
                 <li key={node.portfolioId} className="card-shadow">
