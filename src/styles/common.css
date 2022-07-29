@@ -231,8 +231,10 @@ pre code {
   padding: 8px;
   display: block;
   border-radius: 8px;
-  white-space: break-spaces;
+  /* white-space: break-spaces; */
   word-break: break-all;
+  width: fit-content;
+  max-width: fit-content;
 }
 .sitemap a {
   text-decoration: initial;
