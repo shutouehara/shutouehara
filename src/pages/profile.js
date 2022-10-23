@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
 
-import profileImg from "../../static/profile_photo.webp"
+import profileImg from "../../static/profile_heroimg_2400.webp"
 
 export default function Home() {
   const age = () => {
