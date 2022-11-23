@@ -10,6 +10,7 @@ import BtnOriginal from "../../components/btn-original"
 import ContactBtn from "../../components/contact-btn"
 import Twitter from "../../components/twitter"
 import { useLocation } from "@reach/router"
+import cheerio from 'cheerio'
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -20,6 +21,13 @@ const BlogPage = ({ pageContext, data }) => {
   } = pageContext
   const date = dayjs.utc(data.microcmsBlog.updatedAt).tz('Asia/Tokyo').format('YYYY/MM/DD')
   const url = useLocation()
+  const $ = cheerio.load(data.microcmsBlog.blog_body);
+  const headings = $('h2').toArray();
+  const toc = headings.map(data => ({
+    text: data.children[0].data,
+    id: data.attribs.id,
+    name: data.name
+  }));
   return (
     <Layout>
       <div className="article-container pt-5 bg-white px-3 px-sm-4 mx-3 mx-md-auto">
@@ -43,6 +51,20 @@ const BlogPage = ({ pageContext, data }) => {
             <dd className="d-inline">{data.microcmsBlog.blog_category}</dd>
           </dl>
           <p className="my-5"><img src={data.microcmsBlog.blog_thumbnail.url}  alt={`${data.microcmsBlog.blog_title}のサムネイル`} style={{ border: '1px solid' }} /></p>
+          {toc.length ? (
+            <div id="create-table-of-contents" className="my-5">
+              <h2 className="border-0">目次</h2>
+              <ul>
+                {toc.map((toc, index) => {
+                  return (
+                    <li className="toc-list mb-1" key={toc.id}>
+                      <a href={"#" + toc.id}>{toc.text}</a>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          ) : ("")}
           <div
             dangerouslySetInnerHTML={{
               __html: `${data.microcmsBlog.blog_body}`,

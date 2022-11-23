@@ -16,6 +16,7 @@
   "dependencies": {
     "@isamrish/gatsby-plugin-google-adsense": "^1.2.0",
     "bootstrap": "^5.2.3",
+    "cheerio": "^1.0.0-rc.12",
     "dayjs": "^1.11.6",
     "false": "^0.0.4",
     "gatsby": "^5.1.0",
