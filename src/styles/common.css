@@ -142,6 +142,9 @@ address {
 .article-inner h2 span, .article-inner h3 span, .article-inner h4 span, .article-inner h5 span {
   font-size: inherit;
 }
+.article-inner h2 {
+  scroll-margin-top: 88px;
+}
 .article-inner h3 {
   margin-top: 24px;
   margin-bottom: 1rem;
