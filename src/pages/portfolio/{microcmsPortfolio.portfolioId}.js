@@ -8,6 +8,7 @@ import Seo from "../../components/seo"
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb'
 import BtnOriginal from "../../components/btn-original"
 import ContactBtn from "../../components/contact-btn"
+import Twitter from "../../components/twitter"
 import { useLocation } from "@reach/router"
 
 dayjs.extend(utc)
@@ -56,6 +57,7 @@ const PortfolioPage = ({ pageContext, data }) => {
           />
         </article>
         <ContactBtn />
+        <Twitter />
       </div>
       <div className="my-5 text-center">
         <BtnOriginal btnText="制作例一覧へ" linkTo="/portfolio/" btnClass="mt-3 mb-5 py-2" />

@@ -8,6 +8,7 @@ import { Reveal } from "react-genie"
 import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
+import Twitter from "../components/twitter"
 import "../styles/top.css"
 
 import { graphql } from "gatsby"
@@ -113,6 +114,9 @@ export default function Home({data}) {
         </div>
         <Reveal animation={Animation.SlideInLeft} delay="400" >
           <ContactBtn />
+          <div className="px-4">
+            <Twitter />
+          </div>
         </Reveal>
       </Layout>
     </>

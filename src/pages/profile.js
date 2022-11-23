@@ -3,6 +3,7 @@ import { useLocation } from "@reach/router"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ContactBtn from "../components/contact-btn"
+import Twitter from "../components/twitter"
 
 import profileImg from "../../static/profile_heroimg_2400.webp"
 
@@ -20,7 +21,7 @@ export default function Home() {
   const url = useLocation()
   return (
     <Layout>
-      <Seo title="プロフィール" description="経歴など。" siteType="article" pageUrl={url.pathname} imgUrl={profileImg} />
+      <Seo title="上原崇利のプロフィール" description="上原崇利の経歴など。" siteType="article" pageUrl={url.pathname} imgUrl={profileImg} />
       <h1 className="text-center mt-5 mb-lg-5 pt-lg-4">プロフィール</h1>
       <article className="row row-cols-1 row-cols-sm-2 mt-3 mt-lg-4 pb-5 mx-0">
         <div className="profile-left col px-0 text-center">
@@ -39,19 +40,19 @@ export default function Home() {
           <dl className="profile-right text-start mx-auto mt-5 mt-md-0 px-4 px-md-5">
             <dt className="fw-normal">職種</dt>
             <dd className="mb-4">フロントエンドエンジニア</dd>
-            <dt className="fw-normal">特技</dt>
-            <dd className="mb-4">校正</dd>
             <dt className="fw-normal">趣味</dt>
-            <dd className="mb-5">買い物（家事関連）、料理、ラジオ視聴、未経験の技術を試してみること</dd>
+            <dd className="mb-5">買い物、料理、ラジオ視聴、未経験の技術を試してみること</dd>
 
             <dt className="fw-normal pt-4">できること</dt>
             <dd className="mb-4">ウェブサイト制作（WordPress・Gatsby）</dd>
+            <dt className="fw-normal">得意なこと</dt>
+            <dd className="mb-4">HTMLマークアップ、SEO、WordPress開発</dd>
             <dt className="fw-normal">使える言語</dt>
             <dd className="mb-4">HTML/CSS、JavaScript（jQuery・React）、PHP</dd>
             <dt className="fw-normal">現在学習中</dt>
             <dd className="mb-4">TypeScript、Next.js、Laravel</dd>
             <dt className="fw-normal">興味分野</dt>
-            <dd className="mb-5">情報セキュリティ、アプリ開発、SEOライティング</dd>
+            <dd className="mb-5">情報セキュリティ、アプリ開発</dd>
 
             <dt className="fw-normal pt-4">学歴</dt>
             <dd className="mb-4">琉球大学 観光産業科学部 産業経営学科　卒業</dd>
@@ -72,6 +73,9 @@ export default function Home() {
         </a>
       </div>
       <ContactBtn />
+      <div className="px-4">
+        <Twitter />
+      </div>
     </Layout>
   )
 }
