@@ -138,12 +138,10 @@ address {
   margin-bottom: 16px;
   padding-bottom: 4px;
   border-bottom: 2px solid #030a2e;
+  scroll-margin-top: 88px;
 }
 .article-inner h2 span, .article-inner h3 span, .article-inner h4 span, .article-inner h5 span {
   font-size: inherit;
-}
-.article-inner h2 {
-  scroll-margin-top: 88px;
 }
 .article-inner h3 {
   margin-top: 24px;
