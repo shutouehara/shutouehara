@@ -70,7 +70,8 @@ module.exports = {
     {
       resolve: "gatsby-source-microcms",
       options: {
-        apiKey: process.env.API_KEY,
+        // apiKey: process.env.API_KEY,
+        apiKey: "9d56d66000b341b096e0d8f56437716d15bf",
         serviceId: 'shutouehara',
         apis: [
           {
